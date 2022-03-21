@@ -2,10 +2,11 @@ function selectMode(mode) {
     let backColor;
     let fontColor;
 
+    // "addEventListener" provoca que es saturi al cap d'uns quants clicks
     if (mode === "dark") {
         backColor = "#1e2428";
         fontColor = "white";
-        check.addEventListener("click", () => {selectMode('light')}); // provoca que es saturi al cap d'una estona
+        check.addEventListener("click", () => {selectMode('light')});
     } else if (mode === "light") {
         backColor = "white";
         fontColor = "black";
