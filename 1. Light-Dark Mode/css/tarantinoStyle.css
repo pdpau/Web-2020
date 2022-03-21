@@ -1,0 +1,31 @@
+/* Tarantino Style */
+/* Insert the font from a file */
+@font-face {
+    font-family: "Benguiat Bold";
+    src: url(../fonts/benguiat-bold.ttf);
+}
+.displayTitle1 {
+    font-size: 35px;
+    font-family: 'Benguiat Bold', arial;
+    text-align: center;
+    margin: 150px 0 0 0;
+}
+.displayTitle2 {
+    font-size: 80px;
+    font-family: 'Benguiat Bold', arial;
+    text-align: center;
+    margin: 0 0 0 0;
+}
+/* End of Tarantino Style */
+
+
+/* Switch position */
+.divSwitch {
+    margin: 15px auto auto auto;
+    padding: 5px;
+    width: 70px;
+
+    display: flex;
+    justify-content: center;
+}
+/* End of Switch position */

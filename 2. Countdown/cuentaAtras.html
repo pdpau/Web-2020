@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cuenta Atrás</title>
+	<link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/buttons.css">
+</head>
+<body>
+	<h1>CUENTA ATRAS</h1>
+	<br>
+	<div class="inputDiv">
+		<input type="number" id="inputValue" min="1" placeholder="Introduce minutes"> <!-- disabled style="opacity: 0;" -->
+	</div>
+	<br>
+	<div class="buttonsDiv">
+		<button id="startBtn" class="startBtn" onclick="startClick(1)">START</button>
+		<button id="stopBtn" class="stopBtn" onclick="stopClick()">STOP</button>
+		<button id="resumeBtn" class="resumeBtn" onclick="resumeClick()">RESUME</button>
+		<button id="resetBtn" class="resetBtn" onclick="resetClick()">RESET</button>
+	</div>
+	<br>
+	<div class="numberDiv">
+		<div class="numberDiv2">
+			<p id="mins" class="mins">0</p>
+			<p>: </p>
+			<p id="secs" class="secs">0</p>
+			<p>: </p>
+			<p id="cents" class="cents">0</p>
+		</div>
+	</div>
+
+	<a class="btnReturnIndex" href="index.html">Index</a>
+
+	<script src="js/cuentaAtras.js"></script>
+</body>
+</html>

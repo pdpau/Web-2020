@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="css/countdown.css">
+    <link rel="stylesheet" href="css/buttons.css">
+</head>
+<body>
+    <h1>COUNTDOWN v1</h1>
+    <br>
+    <div class="inputDiv">
+        <input type="number" id="inputValue" min="0" value="10">
+    </div>
+    <br>
+    <div class="buttonsDiv">
+        <button id="startBtn" class="startBtn" onclick="startClick(input.value)">Start</button>
+        <button id="stopBtn" class="stopBtn" onclick="stopClick()">Stop</button>
+        <button id="resumeBtn" class="resumeBtn" onclick="resumeClick(number.textContent)">Resume</button>
+        <button id="resetBtn" class="resetBtn" onclick="resetClick(input.value)">Reset</button>
+    </div>
+    <br>
+    <div class="numberDiv">
+        <h2 id="number" class="number">10</h2>
+    </div>
+
+    <script src="js/countdown.js"></script>
+</body>
+</html>

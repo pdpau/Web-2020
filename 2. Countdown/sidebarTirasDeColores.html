@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+</head>
+<body>
+    <div id="sideNav" class="sideNav">
+        <a href="index.html" class="ex1">Example 1</a>
+        <a href="#" class="ex2">Example 2</a>
+        <a href="#" class="ex3">Example 3</a>
+        <a href="#" class="ex4">Example 4</a>
+    </div>
+
+    <style>
+        .sideNav a {
+            position: absolute;
+            right: -120px; /* Posicionar fora de la pantalla */
+            transition: .3s;
+            padding: 15px 15px 15px 30px;
+            width: 100px;
+            text-decoration: none; /* Treure el subrratllat */
+            font-size: 20px;
+            color: white;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .sideNav a:hover {
+            right: 0; /* Moure cap a la dreta perque entri a la pantalla */
+        }
+
+        .ex1 {
+            top: 60px;
+            background-color: blue;
+        }
+        .ex2 {
+            top: 120px;
+            background-color: red;
+        }
+        .ex3 {
+            top: 180px;
+            background-color: green;
+        }
+        .ex4 {
+            top: 240px;
+            background-color: yellow;
+        }
+        
+    </style>
+</body>
+</html>

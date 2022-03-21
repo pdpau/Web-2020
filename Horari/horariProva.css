@@ -1,0 +1,111 @@
+body {
+    background: white;
+}
+table {
+    width: 100%;
+}
+
+/* caption {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+} */
+
+td, th {
+    font-size: 30px;
+    text-align: center;
+    height: 72px;
+    padding: 5px 5px 5px 5px;
+}
+
+
+/* Columnes */
+col {
+    width: 220px;
+}
+.hora {
+    width: 180px;
+}
+
+
+
+/* Buttons */
+a {
+    background-color: lightblue;
+    color: white;
+    padding: 14px 25px;
+
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.btnfis:link, .btnmat:link, .btnqui:link, .btntech:link, .btncat:link, .btncaste:link, .btnang:link, .btnfilo:link, .btncmc:link, .btnef:link,
+.btnfis:visited, .btnmat:visited, .btnqui:visited, .btntech:visited, .btncat:visited, .btncaste:visited, .btnang:visited, .btnfilo:visited, .btncmc:visited, .btnef:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btnfis:hover, .btnmat:hover, .btnqui:hover, .btntech:hover, .btncat:hover, .btncaste:hover, .btnang:hover, .btnfilo:hover, .btncmc:hover, .btnef:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btnfis:active, .btnmat:active, .btnqui:active, .btntech:active, .btncat:active, .btncaste:active, .btnang:active, .btnfilo:active, .btncmc:active, .btnef:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btnfis-white {background-color: purple; color: white;}
+.btnmat-white {background-color: blue; color: white;}
+.btnqui-white {background-color: green; color: white;}
+.btntech-white {background-color: #FFAA00; color: white;}
+.btncat-white {background-color: red; color: white;}
+.btncaste-white {background-color: pink; color: white;}
+.btnang-white {background-color: yellow; color: white;}
+.btnfilo-white {background-color: #B5651D; color: white;}
+.btncmc-white {background-color: lightgreen; color: white;}
+.btnef-white {background-color: grey; color: white;}
+
+.btnfis::after, .btnmat::after, .btnqui::after, .btntech::after, .btncat::after, .btncaste::after, .btnang::after, .btnfilo::after, .btncmc::after, .btnef::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btnfis-white::after {background-color: purple;}
+.btnmat-white::after {background-color: blue;}
+.btnqui-white::after {background-color: green;}
+.btntech-white::after {background-color: #FFAA00;}
+.btncat-white::after {background-color: red;}
+.btncaste-white::after {background-color: pink;}
+.btnang-white::after {background-color: yellow;}
+.btnfilo-white::after {background-color: #B5651D;}
+.btncmc-white::after {background-color: lightgreen;}
+.btnef-white::after {background-color: grey;}
+
+.btnfis:hover::after, .btnmat:hover::after, .btnqui:hover::after, .btntech:hover::after, .btncat:hover::after, .btncaste:hover::after, .btnang:hover::after, .btnfilo:hover::after, .btncmc:hover::after, .btnef:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btnfis-animated, .btnmat-animated, .btnqui-animated, .btntech-animated, .btncat-animated, .btncaste-animated, .btnang-animated, .btnfilo-animated, .btncmc-animated, .btnang-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}

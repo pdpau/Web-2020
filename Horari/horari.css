@@ -1,0 +1,63 @@
+body {
+    background: white;
+}
+
+/* caption {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+} */
+
+td, th {
+    font-size: 25px;
+    text-align: center;
+    height: 72px;
+}
+
+/* ----------------------- Propietats comunes -------------------------------- */
+.mat, .fis, .qui, .tech, .cat, .caste, .ang, .filo, .cmc, .ef {
+    border-radius: 100px;
+    transition: transform 0.3s; /* Duracion del scale(1.5) */
+}
+/* Fer el zoom */
+.mat:hover, .fis:hover, .qui:hover, .tech:hover, .cat:hover, .caste:hover, .ang:hover, .filo:hover, .cmc:hover, .ef:hover {
+    transform: scale(1.5);
+}
+
+/* Buttons */
+a {
+    background-color: lightblue;
+    color: white;
+    padding: 14px 25px;
+
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+
+/* ------------------------- Propietats específiques (color de fons i color dels botons) ---------------------------*/
+.nothing {background: white;}
+.mat, .matB  {background: blue;}
+.fis, .fisB {background: purple;}
+.qui, .quiB {background: green;}
+.tech, .techB{background: #FFAA00;}
+.cat, .catB{background: red;}
+.caste, .casteB{background: pink;}
+.ang, .angB{background: yellow;}
+.cmc, .cmcB{background: lightgreen;}
+.filo, .filoB{background: #B5651D;}
+.ef, .efB{background: grey;}
+
+
+/* Columnes */
+col {
+    width: 220px;
+}
+.hora {
+    width: 180px;
+}

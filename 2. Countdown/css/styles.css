@@ -1,0 +1,39 @@
+/* Tarantino Style */
+/* Insert the font from a file */
+@font-face {
+    font-family: "Benguiat Bold";
+    src: url(../fonts/benguiat-bold.ttf);
+}
+html {
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-family: "Benguiat Bold";
+    font-size: 58px;
+
+    text-align: center;
+    margin: 10px;
+}
+
+.inputDiv {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    margin: 10px;
+}
+
+.numberDiv {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Benguiat Bold";
+    font-size: 100px;
+}
+.numberDiv2 {
+    display: flex;
+}

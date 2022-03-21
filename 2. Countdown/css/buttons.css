@@ -1,0 +1,48 @@
+/* CSS BUTTONS (NOT MINE) */
+/* Default options */
+/* $primaryColour: red; */
+/* $secondaryColour: blue; */
+button, .btnCronometro, .btnCountdown, .btnReturnIndex {
+  margin: 0 30px 0 30px;
+  padding: 10px 20px 10px 20px;
+  border: 3px solid;
+  border-radius: 10px;
+  font-size: 25px;
+  cursor: pointer;
+  background: lightgrey;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  /* Prevent highlight colour when element is tapped */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* Improve performance on mobile/tablet devices */
+  transform: translateZ(0);
+  /* Improve aliasing on mobile/tablet devices */
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+button:hover, .btnCronometro:hover, .btnCountdown:hover, .btnReturnIndex:hover {
+  /* transform: rotate(10deg); */
+  transform: scale(1.2);
+}
+
+/* MY CSS */
+.buttonsDiv {
+  display: flex;
+  justify-content: center;
+}
+
+/* Els que comencen desactivats */
+.stopBtn, .resumeBtn, .resetBtn {
+  display: none;
+}
+
+.transition {
+  transition: opacity 0.3s ease;
+}
+
+.inputTransition {
+  transition: opacity 1s ease-out;
+}

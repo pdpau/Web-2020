@@ -1,0 +1,61 @@
+/* Import de la google font */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252a;
+}
+
+li, a, button {
+    font-family: sans-serif; /* Posar la font importada */
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.title {
+    margin-right: auto; /* Ho posa a l'esquerra */
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.title:hover {
+    color: #0088a9;
+}
+
+.nav-list {
+    list-style: none;
+}
+/* DISPLAY: INLINE-BLOCK es per a posar els elements en horitzontal */
+.nav-list li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.nav-list li a {
+    transition: all 0.3s ease 0s;
+}
+.nav-list li a:hover {
+    color: #0088a9;
+}
+
+/* Botó de contacte */
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0;
+}
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
