@@ -1,6 +1,7 @@
 function selectMode(mode) {
     let backColor;
     let fontColor;
+    let check = document.getElementById("check")
 
     // "addEventListener" provoca que es saturi al cap d'uns quants clicks
     if (mode === "dark") {
